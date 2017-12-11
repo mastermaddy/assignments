@@ -1,0 +1,13 @@
+    .MODEL SMALL
+    .DATA
+AAAA:DB 11
+BBBB:DW 22
+    .CODE
+    .STARTUP
+    MOV AH,42
+abc:MOV DX,7451
+    JMP abc
+    JMP xyz
+xyz:ADD DX,BX
+    ADD CX,8961
+    .EXIT
